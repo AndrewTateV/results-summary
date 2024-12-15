@@ -1,0 +1,71 @@
+@media (max-width: 569px) {
+  .container {
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .left,
+  .right {
+    width: 30em;
+    height: auto; /* 改为auto */
+    border-radius: 0;
+  }
+
+  .left {
+    border-radius: 0 0 3rem 3rem;
+    padding: 2rem 4rem;
+    gap: 1.5rem; /* 减小间距 */
+  }
+
+  .left-main {
+    width: 12rem; /* 减小圆圈大小 */
+    height: 12rem;
+  }
+
+  .score {
+    font-size: 4rem; /* 减小分数字体大小 */
+  }
+
+  .left-footer p {
+    margin-top: 0.5rem; /* 减小段落上边距 */
+  }
+
+  .right {
+    padding: 2.4rem; /* 调整右侧内边距 */
+    box-shadow: none;
+  }
+
+  .right-main {
+    width: 100%; /* 添加这行 */
+  }
+
+  .right-main ul {
+    width: 100%; /* 添加这行 */
+  }
+
+  .right-main ul li {
+    width: 100%;
+    padding: 1.6rem; /* 可以适当调整内边距 */
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1.5rem;
+    border-radius: 3rem;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .btn:hover {
+    background: linear-gradient(
+      to bottom,
+      hsl(252, 100%, 67%),
+      hsl(241, 81%, 54%)
+    );
+  }
+}
